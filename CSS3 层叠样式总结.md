@@ -9,7 +9,7 @@
 
 # CSS3 层叠样式总结
 
-![](..\Images\CSS3.jpg)
+![](Images\CSS3.jpg)
 
 # Hello World
 
