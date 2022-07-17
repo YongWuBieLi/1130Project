@@ -704,6 +704,57 @@
 	
 ```
 
+### 计算n的阶乘
+
+```c
+	
+	//计算N阶乘 5*4*3*2*1 0的阶乘等于1
+    int getFactorial(int n) {
+        int factorial = 1;
+        if (0 == n)
+            return factorial;
+        for (int i = n; i != 1; i--)
+        {		
+            factorial *= i;
+        }
+        return factorial;
+    }
+	
+```
+
+### 计算1!+2!+3!..n!
+
+```c
+	
+	//计算1!+2!+3!..n!
+    int getFactorialS1(int n) {
+        int factorialSum = 0;
+        for (int i = n; i != 0; i--)
+        {	
+            factorialSum += getFactorial(i);
+        }
+        return factorialSum;
+    }
+	
+```
+
+### 数组查找
+
+```c
+	
+	//有序数组v中查找 某个值 返回位置 n作为查找的范围 从第一个到第n个
+    //0 代表未找到
+    int binsearch(int x, int v[], int n) {
+        for (int i = 0; i < n; i++)
+        {
+            if (v[i] == x)
+                return i + 1;
+        }
+        return 0;
+    }
+	
+```
+
 
 
 ## 题
